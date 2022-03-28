@@ -1,0 +1,48 @@
+#project-a {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/personalsite.png);
+    border: 1px solid black;
+}
+
+#project-a:hover {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-b {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-b:hover {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-c {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-c:hover {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-d {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-d:hover {
+    background-image: none;
+    background-color: #22A39F;
+}
+

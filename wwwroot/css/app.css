@@ -87,3 +87,8 @@ p {
     letter-spacing: 2px;
     color: #727878;
 }
+
+.component-bg {
+    background-color: #F3EFE0;
+    padding-bottom: 40px;
+}
