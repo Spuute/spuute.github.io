@@ -1,7 +1,19 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    color: #22A39F;
+}
+
+h4 {
+    font-family: 'Open Sans';
+    font-weight: 100;
 }
 
 h1:focus {
@@ -11,6 +23,13 @@ h1:focus {
 a, .btn-link {
     color: #0071c1;
 }
+
+p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #434242;
+}
+
 
 .btn-primary {
     color: #fff;
@@ -62,3 +81,9 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+.lead {
+    letter-spacing: 2px;
+    color: #727878;
+}
