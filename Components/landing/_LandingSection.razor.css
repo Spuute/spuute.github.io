@@ -1,0 +1,38 @@
+hr {
+    border: none;
+    height: 2px; 
+ }
+   
+ h1 {
+     font-weight: 800;
+     font-size: 60px;
+     color: #fff;
+ }
+ 
+ .jumbotron {
+     height: 100vh;
+     background-image: url(./img/landing1.jpg);
+     background-size: 100% 100%;
+ }
+ 
+ .overlay {
+     background-color: #22A39F;
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     opacity: 0.75;
+     filter: alpha(opacity=75);
+     z-index: 2;
+ }
+ 
+ .text-center-aligned {
+     color: #fff;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: 'Open Sans';
+ }
+ 
