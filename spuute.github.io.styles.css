@@ -1,0 +1,167 @@
+/* /Components/abilities/_AbilitiesSection.razor.rz.scp.css */
+.component-bg[b-w9yk6up368] {
+    background-color: #F3EFE0;
+    padding-bottom: 40px;
+}
+
+.green-color[b-w9yk6up368] {
+    color: #22A39F;
+}
+/* /Components/aboutMe/_AboutMeSection.razor.rz.scp.css */
+h1[b-29j81dad2i] {
+    font-size: 54px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    color: #22A39F;
+}
+
+h4[b-29j81dad2i] {
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+.profile-img[b-29j81dad2i] {
+    width: 350px;
+    border-radius: 50%;
+    border: 10px solid #22A39F;
+}
+/* /Components/contact/_ContactSection.razor.rz.scp.css */
+.contact-bg[b-tcai811qp1] {
+    background-color: #434242;
+    height: 500px;
+}
+
+h1[b-tcai811qp1] {
+    color: #FFF;
+}
+
+hr[b-tcai811qp1] {
+    color: #FFF;
+}
+
+p[b-tcai811qp1] {
+    color: #c0c0c0;
+}
+
+.fa[b-tcai811qp1] {
+    font-size: 20px;
+    color: #c0c0c0;
+}
+
+body[b-tcai811qp1] {
+    color: #c0c0c0;
+}
+/* /Components/landing/_LandingSection.razor.rz.scp.css */
+hr[b-asy8qxwhiq] {
+    border: none;
+    height: 2px; 
+ }
+   
+ h1[b-asy8qxwhiq] {
+     font-weight: 800;
+     font-size: 60px;
+     color: #fff;
+ }
+ 
+ .jumbotron[b-asy8qxwhiq] {
+     height: 100vh;
+     background-image: url(./img/landing1.jpg);
+     background-size: 100% 100%;
+ }
+ 
+ .overlay[b-asy8qxwhiq] {
+     background-color: #22A39F;
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     opacity: 0.75;
+     filter: alpha(opacity=75);
+     z-index: 2;
+ }
+ 
+ .text-center-aligned[b-asy8qxwhiq] {
+     color: #fff;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: 'Open Sans';
+ }
+ 
+/* /Components/projects/_ProjectSection.razor.rz.scp.css */
+#project-a[b-quw3fz1j3r] {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/personalsite.png);
+    border: 1px solid black;
+}
+
+#project-a:hover[b-quw3fz1j3r] {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-b[b-quw3fz1j3r] {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-b:hover[b-quw3fz1j3r] {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-c[b-quw3fz1j3r] {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-c:hover[b-quw3fz1j3r] {
+    background-image: none;
+    background-color: #22A39F;
+}
+
+#project-d[b-quw3fz1j3r] {
+    width: 400px;
+    height: 300px;
+    background-image: url(./img/coming-soon.png);
+    border: 1px solid black;
+}
+
+#project-d:hover[b-quw3fz1j3r] {
+    background-image: none;
+    background-color: #22A39F;
+}
+/* /Components/workExperiences/_WorkExperiencesSection.razor.rz.scp.css */
+body[b-vxp66ggg2r] {
+    background-color: #F3EFE0;
+}
+
+.component-bg[b-vxp66ggg2r] {
+    background-color: #F3EFE0;
+    padding-bottom: 40px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-c1qi4uiu8b] {
+        display: none;
+    }
+
+    .top-row.auth[b-c1qi4uiu8b] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-c1qi4uiu8b]  a, .top-row[b-c1qi4uiu8b]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+
+}
