@@ -90,7 +90,7 @@ const cvData: CvData = {
     {
       title: "Målare lärling",
       company: "Olika företag",
-      period: "2003 - 2009"
+      period: "2003 - 2009",
       description: "Traditionell lärlingsutbildning på diverse företag mellan 2003 - 2009",
       technologies: []
     }
@@ -119,7 +119,7 @@ const cvData: CvData = {
       school: "Traditionell lärling",
       period: "2009",
       description: "Avlagt gesällbrev inom måleriyrket efter 6800 timmar som traditionell lärling"
-    }
+    },
   ],
   skills: [
     { name: "C#", level: 95, category: "Backend" },
