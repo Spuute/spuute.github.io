@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Card, CardContent, Grow } from "@mui/material";
+import { Box, Typography, Container, Card, CardContent, Grow, Stack } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 import type { Education } from "../data/cvData";
 import { useInView } from "../hooks/useInView";
@@ -72,9 +72,11 @@ export default function EducationSection({ education }: Props) {
           />
         </Box>
 
-        {education.map((edu, i) => (
-          <EducationCard key={i} edu={edu} index={i} />
-        ))}
+        <Stack spacing={3}>
+          {education.map((edu, i) => (
+            <EducationCard key={i} edu={edu} index={i} />
+          ))}
+        </Stack>
       </Container>
     </Box>
   );
