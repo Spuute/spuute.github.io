@@ -79,15 +79,47 @@ const cvData: CvData = {
       description:
       "Arbete mot kund i danmark som är begravningsentreprenör där vi tillgodosett med ett system för hantering av begravningar.",
       technologies: ["C#", "Docker", "Blazor", "ASP.NET Core", "API"]
+    },
+    {
+      title: "Målare",
+      company: "Olika företag",
+      period: "2009 - 2022",
+      description: "Arbetat som målare på diverse företag mellan 2009 - 2022",
+      technologies: []
+    },
+    {
+      title: "Målare lärling",
+      company: "Olika företag",
+      period: "2003 - 2009"
+      description: "Traditionell lärlingsutbildning på diverse företag mellan 2003 - 2009",
+      technologies: []
     }
   ],
   education: [
     {
-      degree: "Kandidatexamen i Datateknik",
-      school: "Tekniska Högskolan",
-      period: "2014 – 2017",
-      description: "Inriktning mot mjukvaruutveckling och systemarkitektur.",
+      degree: ".NET utvecklare",
+      school: "Teknikhögskolan",
+      period: "2020 – 2022",
+      description: "YH utbildning till .NET utvecklare. inkl 2 LIA perioder.",
     },
+    {
+      degree: "Komvux",
+      school: "Campus väst",
+      period: "2019 - 2022",
+      description: "Läst upp diverse gymnasiekurser"
+    },
+    {
+      degree: "Barnskötare / elevassistent",
+      school: "Kunskapens hus",
+      period: "2018 - 2019",
+      description: "Yrkesutbildning till barnskötare och elevassistent"
+    },
+    {
+      degree: "Gesällbrev målare",
+      school: "Traditionell lärling",
+      period: "2009",
+      description: "Avlagt gesällbrev inom måleriyrket efter 6800 timmar som traditionell lärling"
+    }
   ],
   skills: [
     { name: "C#", level: 95, category: "Backend" },
@@ -96,13 +128,13 @@ const cvData: CvData = {
     { name: "SQL Server", level: 85, category: "Backend" },
     { name: "Azure", level: 80, category: "Cloud & DevOps" },
     { name: "Docker", level: 75, category: "Cloud & DevOps" },
-    { name: "Kubernetes", level: 65, category: "Cloud & DevOps" },
-    { name: "CI/CD", level: 80, category: "Cloud & DevOps" },
-    { name: "React", level: 70, category: "Frontend" },
-    { name: "TypeScript", level: 75, category: "Frontend" },
-    { name: "HTML/CSS", level: 70, category: "Frontend" },
-    { name: "Git", level: 85, category: "Verktyg" },
-    { name: "Agile / Scrum", level: 80, category: "Verktyg" },
+    { name: "CI/CD", level: 70, category: "Cloud & DevOps" },
+    { name: "React", level: 50, category: "Frontend" },
+    { name: "Blazor", level: 90, category: "Frontend" },
+    { name: "TypeScript", level: 70, category: "Frontend" },
+    { name: "HTML/CSS", level: 95, category: "Frontend" },
+    { name: "Git", level: 80, category: "Verktyg" },
+    { name: "Agile / Scrum", level: 90, category: "Verktyg" },
   ],
 };
 
