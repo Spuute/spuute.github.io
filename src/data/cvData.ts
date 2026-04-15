@@ -53,8 +53,8 @@ const cvData: CvData = {
       company: "Norion bank AB",
       period: "2024 – Nu",
       description:
-        "Utvecklar och effektiviserar bankens AML/KYC process genom automation och integration samtliga försystem.",
-      technologies: ["C#", ".NET", "Azure", "SQL Server", "Docker", "DDD", "CQRS", "EventSourcing"],
+        "Utvecklar och effektiviserar AML/KYC-processer genom automation och integration av försystem, med fokus på AI-drivna lösningar såsom agentbaserad arkitektur, orkestrering och verktyg som Copilot och Playwright.",
+      technologies: ["C#", ".NET", "Azure", "Blazor", "Playwright", "Copilot", "bUnit", "SQL Server", "Docker", "DDD", "CQRS", "EventSourcing"],
     },
     {
       title: "Fullstack .NET Developer",
