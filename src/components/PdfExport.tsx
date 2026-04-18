@@ -3,7 +3,6 @@ import {
   Box,
   Typography,
   Chip,
-  LinearProgress,
   Fab,
   CircularProgress,
   Snackbar,
@@ -151,33 +150,30 @@ function PdfContent({ data, innerRef }: { data: CvData; innerRef: React.Ref<HTML
             <Typography sx={{ fontSize: "0.8rem", color: "#7c4dff", textTransform: "uppercase", letterSpacing: "0.08em", mb: 1, fontWeight: 600 }}>
               {cat}
             </Typography>
-            {data.skills
-              .filter((s) => s.category === cat)
-              .map((skill) => (
-                <Box key={skill.name} sx={{ mb: 1 }}>
-                  <Box sx={{ display: "flex", justifyContent: "space-between", mb: 0.3 }}>
-                    <Typography sx={{ fontSize: "0.8rem", color: "#ccd6f6" }}>
-                      {skill.name}
-                    </Typography>
-                    <Typography sx={{ fontSize: "0.7rem", color: "#8892b0" }}>
-                      {skill.level}%
-                    </Typography>
-                  </Box>
-                  <LinearProgress
-                    variant="determinate"
-                    value={skill.level}
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+              {data.skills
+                .filter((s) => s.category === cat)
+                .map((skill) => (
+                  <Chip
+                    key={skill.name}
+                    label={skill.name}
+                    size="small"
                     sx={{
-                      height: 4,
-                      borderRadius: 2,
-                      backgroundColor: "rgba(100,255,218,0.08)",
-                      "& .MuiLinearProgress-bar": {
-                        borderRadius: 2,
-                        background: `linear-gradient(90deg, #64ffda, #7c4dff)`,
+                      height: 22,
+                      fontSize: "0.7rem",
+                      maxWidth: "none",
+                      background: "rgba(100,255,218,0.08)",
+                      color: "#64ffda",
+                      border: "1px solid rgba(100,255,218,0.2)",
+                      "& .MuiChip-label": {
+                        overflow: "visible",
+                        textOverflow: "unset",
+                        whiteSpace: "nowrap",
                       },
                     }}
                   />
-                </Box>
-              ))}
+                ))}
+            </Box>
           </Box>
         ))}
       </Box>
@@ -204,22 +200,41 @@ export default function PdfExport({ data }: Props) {
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       const pdf = new jsPDF("p", "mm", "a4");
       const pageHeight = 297;
+      const pagePadding = 10; // top padding for page 2+
+      const imgData = canvas.toDataURL("image/png");
 
       let position = 0;
       let remainingHeight = imgHeight;
+      let pageIndex = 0;
 
       while (remainingHeight > 0) {
-        if (position > 0) pdf.addPage();
+        if (pageIndex > 0) pdf.addPage();
+
+        // Fill entire page with background color
+        pdf.setFillColor(10, 25, 47); // #0a192f
+        pdf.rect(0, 0, 210, 297, "F");
+
+        const yOffset = pageIndex === 0 ? 0 : pagePadding;
+
         pdf.addImage(
-          canvas.toDataURL("image/png"),
+          imgData,
           "PNG",
           0,
-          -position,
+          -position + yOffset,
           imgWidth,
           imgHeight
         );
-        remainingHeight -= pageHeight;
-        position += pageHeight;
+
+        // Mask the padding area on subsequent pages to cover shifted content
+        if (pageIndex > 0) {
+          pdf.setFillColor(10, 25, 47);
+          pdf.rect(0, 0, 210, pagePadding, "F");
+        }
+
+        const usableHeight = pageIndex === 0 ? pageHeight : pageHeight - pagePadding;
+        remainingHeight -= usableHeight;
+        position += usableHeight;
+        pageIndex++;
       }
 
       pdf.save(`${data.name.replace(/\s+/g, "_")}_CV.pdf`);

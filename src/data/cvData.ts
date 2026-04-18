@@ -15,7 +15,6 @@ export interface Education {
 
 export interface Skill {
   name: string;
-  level: number; // 1-100
   category: string;
 }
 
@@ -122,19 +121,21 @@ const cvData: CvData = {
     },
   ],
   skills: [
-    { name: "C#", level: 95, category: "Backend" },
-    { name: ".NET / ASP.NET Core", level: 90, category: "Backend" },
-    { name: "Entity Framework", level: 85, category: "Backend" },
-    { name: "SQL Server", level: 85, category: "Backend" },
-    { name: "Azure", level: 80, category: "Cloud & DevOps" },
-    { name: "Docker", level: 75, category: "Cloud & DevOps" },
-    { name: "CI/CD", level: 70, category: "Cloud & DevOps" },
-    { name: "React", level: 50, category: "Frontend" },
-    { name: "Blazor", level: 90, category: "Frontend" },
-    { name: "TypeScript", level: 70, category: "Frontend" },
-    { name: "HTML/CSS", level: 95, category: "Frontend" },
-    { name: "Git", level: 80, category: "Verktyg" },
-    { name: "Agile / Scrum", level: 90, category: "Verktyg" },
+    { name: "C#", category: "Backend" },
+    { name: ".NET / ASP.NET Core", category: "Backend" },
+    { name: "Entity Framework", category: "Backend" },
+    { name: "SQL Server", category: "Backend" },
+    { name: "Azure", category: "Cloud & DevOps" },
+    { name: "Docker", category: "Cloud & DevOps" },
+    { name: "CI/CD", category: "Cloud & DevOps" },
+    { name: "React", category: "Frontend" },
+    { name: "Blazor", category: "Frontend" },
+    { name: "TypeScript", category: "Frontend" },
+    { name: "HTML/CSS", category: "Frontend" },
+    { name: "Git", category: "Verktyg" },
+    { name: "Agile / Scrum", category: "Verktyg" },
+    { name: "GitHub Copilot", category: "AI" },
+    { name: "Claude", category: "AI" },
   ],
 };
 
